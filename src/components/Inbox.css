@@ -1,0 +1,47 @@
+.parent {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 0.1fr 0.3fr 2fr 0.2fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #ededed;
+  height: auto;
+}
+
+.row-item {
+  border-bottom: 1px solid #b2b2b2;
+  padding: 0.8rem;
+}
+.content {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.empty {
+  text-align: center;
+}
+@media screen and (max-width: 908px) {
+  .parent {
+    grid-template-columns: 0.1fr 0.3fr 2fr 0.2fr;
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 668px) {
+  .parent {
+    grid-template-columns: 0.1fr 0.3fr 2fr 0.3fr;
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 513px) {
+  .parent {
+    grid-template-columns: 0.1fr 0.3fr 2fr 0.8fr;
+    font-size: 0.5rem;
+  }
+
+  input.smallCheckbox {
+    height: 7px;
+    flex: none;
+  }
+}

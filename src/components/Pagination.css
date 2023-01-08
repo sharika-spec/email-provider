@@ -1,0 +1,29 @@
+li {
+  list-style-type: none;
+  display:inline; 
+}
+ul {
+  list-style-type: none;
+  font-weight: bold;
+  padding: 0%;
+}
+
+.pagination a {
+  color: #6d6c6c;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 0.9px solid #B2B2B2;
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+  }
+
+@media screen and (max-width: 425px) {
+    .page-item{
+        display:none 
+    }
+
+}
