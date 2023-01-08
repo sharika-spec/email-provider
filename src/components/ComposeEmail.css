@@ -1,0 +1,30 @@
+.mail-container {
+  margin: 1rem;
+  height: 75vh;
+}
+.email-box {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+   
+}
+.email-to{
+    height: 5vh;
+    font-size: larger;
+    font-family: "Times New Roman", Times, serif;
+    border: none;
+    border-bottom: 2px solid #B2B2B2;
+}
+.email-subject{
+    height: 5vh;
+    font-size: larger;
+    font-family: "Times New Roman", Times, serif;
+    border: none;
+    border-bottom: 2px solid #B2B2B2;
+}
+.email-body {
+    font-size: larger;
+    font-family: "Times New Roman", Times, serif;
+    border: none;
+    border-bottom: 2px solid #B2B2B2;
+}

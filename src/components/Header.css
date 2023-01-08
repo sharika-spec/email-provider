@@ -1,0 +1,29 @@
+.header {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.btn {
+  background-color: #12cc94;
+  padding: 1rem;
+  color: white;
+  border: none;
+
+}
+.btn-compose-email{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  
+}
+@media screen and (max-width: 375px) {
+  .header {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+}
