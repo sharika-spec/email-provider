@@ -37,6 +37,7 @@ function Header({
         description: "",
       })
       setIsInbox(true);
+      setIsViewEmail(false);
     }
   };
   const handleCancel = () => {
