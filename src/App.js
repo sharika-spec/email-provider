@@ -13,8 +13,10 @@ function App() {
     subject: "",
     description: "",
   });
+  const [isViewEmail, setIsViewEmail] = useState(false);
   const [isCheck, setIsCheck] = useState([]);
   const [data, setData] = useState(inboxData);
+  const [currentEmail, setCurrentEmail] = useState("");
   return (
     <div>
       <Header
@@ -27,9 +29,20 @@ function App() {
         data={data}
         setData={setData}
         isCheck={isCheck}
+        isViewEmail={isViewEmail}
+        setIsViewEmail={setIsViewEmail}
+        currentEmail = {currentEmail}
       />
       {isInbox ? (
-        <Inbox data={data} isCheck={isCheck} setIsCheck={setIsCheck} />
+        <Inbox
+          data={data}
+          isCheck={isCheck}
+          setIsCheck={setIsCheck}
+          isViewEmail={isViewEmail}
+          setIsViewEmail={setIsViewEmail}
+          currentEmail = {currentEmail}
+          setCurrentEmail = {setCurrentEmail}
+        />
       ) : (
         <ComposeEmail setEmail={setEmail} />
       )}

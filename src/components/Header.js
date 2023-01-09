@@ -8,7 +8,10 @@ function Header({
   setIsValid,
   data,
   setData,
-  isCheck
+  isCheck,
+  setIsViewEmail,
+  isViewEmail,
+  currentEmail
 }) {
   const handleClick = () => {
     setIsInbox(false);
@@ -40,12 +43,22 @@ function Header({
     setIsInbox(true);
   };
   const handleDelete = () => {
-    if(isCheck.length===0)
+    if(isCheck.length===0 && isViewEmail===false)
     {
       alert("Please select the checkbox")
     }
     const newRows = data.filter((element) => !isCheck.includes(String(element['id'])));
     setData(newRows);
+    if(isViewEmail)
+    {
+      alert("Deleted");
+      const newRows = data.filter((element) => element["id"] !== currentEmail.data["id"]);
+      setData(newRows);
+      // console.log(newRows)
+      setIsViewEmail(false);
+      // const newRows = rows.filter((user) => user.id !== userId);
+      // setRows(newRows);
+    }
   };
   return (
     <div className="header">
