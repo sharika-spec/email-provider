@@ -41,6 +41,7 @@ function Header({
   };
   const handleCancel = () => {
     setIsInbox(true);
+    setIsViewEmail(false);
   };
   const handleDelete = () => {
     if(isCheck.length===0 && isViewEmail===false)
