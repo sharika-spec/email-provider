@@ -15,9 +15,11 @@ function Header({
   };
   const handleSend = () => {
     setIsInbox(false);
-    var validRegex =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (!email.sendTo.toLowerCase().match(validRegex)) {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    // var validRegex =
+    //   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!email.sendTo.toLowerCase().match(mailformat)) {
       alert("Please enter a valid email address");
     } else if (email.subject.length === 0) {
       alert("Please enter subject");

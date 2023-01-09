@@ -21,6 +21,25 @@
 .empty {
   text-align: center;
 }
+.email-view-container{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding:1rem;
+  background-color: #ededed;
+  border: 2px solid #b2b2b2;
+  height: 75vh;
+}
+.description-item {
+  display: block;
+  flex-grow: 1;
+
+}
+.align-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 @media screen and (max-width: 908px) {
   .parent {
     grid-template-columns: 0.1fr 0.3fr 2fr 0.2fr;
