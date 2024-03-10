@@ -17,6 +17,7 @@ function App() {
   const [isCheck, setIsCheck] = useState([]);
   const [data, setData] = useState(inboxData);
   const [currentEmail, setCurrentEmail] = useState("");
+  
   return (
     <div>
       <Header
