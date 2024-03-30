@@ -2,7 +2,6 @@ import "./Inbox.css";
 import { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 import CloseIcon from "@mui/icons-material/Close";
-// import { click } from "@testing-library/user-event/dist/click";
 
 export default function Inbox({
   data,
